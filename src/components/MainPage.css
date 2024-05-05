@@ -1,0 +1,61 @@
+/* Main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #4caf50;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    display: flex; 
+}
+
+/* Content container */
+.content-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 5%;
+    padding: 10px;
+    
+}
+
+/* Left and right sidebar */
+.left-sidebar {
+    border-right: 1px solid #ccc;
+}
+
+.right-sidebar {
+    width: 15%;
+    border-left: 1px solid #ccc;
+}
+
+/* Main content area */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #4caf50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
