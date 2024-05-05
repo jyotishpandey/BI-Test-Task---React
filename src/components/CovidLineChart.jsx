@@ -11,7 +11,7 @@ const CovidLineChart = ({data,type,stroke}) => {
    
   };
 
-  // Render the Line chart using recharts
+  
   return (
     <div>
       

@@ -15,7 +15,7 @@ const CovidBarChart = ({data}) => {
       };
 
 
-    // Render the Bar chart using Recharts
+  
     return (
         <div>
             

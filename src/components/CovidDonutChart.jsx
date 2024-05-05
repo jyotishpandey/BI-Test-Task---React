@@ -7,13 +7,13 @@ const CovidDonutChart = () => {
     const [data, setData] = useState([]);
     const [chartData, setChartData] = useState([]);
 
-    // Load CSV data and parse it using PapaParse
+
     useEffect(() => {
         fetch('/case_time_series.csv')
             .then((response) => response.text())
             .then((csvText) => {
                 const parsedData = Papa.parse(csvText, {
-                    header: true, // Indicates that the first row is a header
+                    header: true,
                     dynamicTyping: true,
                 });
                 setData(parsedData.data);
@@ -21,7 +21,7 @@ const CovidDonutChart = () => {
             });
     }, []);
 
-    // Prepare the data for the donut chart
+   
     const prepareChartData = (data) => {
         if (data.length > 0) {
             const latestData = data[data.length - 1];
@@ -33,7 +33,7 @@ const CovidDonutChart = () => {
         }
     };
 
-    // Render the donut chart using Recharts
+
     return (
         <div>
             
